@@ -1,0 +1,117 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('../images/ajax-loader.gif') center center no-repeat;
+}
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: calc(50% - 12px);
+    display: block;
+    z-index: 2;
+    width: 39px;
+    height: 79px;
+    padding: 0;
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;   
+    background: url(../images/chevron-left.svg) 50% 50% no-repeat;
+}
+.slick-next {
+    background: url(../images/chevron-right.svg) 50% 50% no-repeat;   
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;   
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev
+{
+    left: 40px; 
+}
+.slick-next
+{
+    right: 40px; 
+}
+.slick-dots
+{
+    position: absolute;
+    bottom: -40px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button , .slick-dots li a
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 10px;
+    height: 10px;
+    display: block;
+    cursor: pointer;
+    color: transparent;
+    border: 0px solid #979797; 
+    border-radius: 100%;
+    outline: none;
+    background: #404040;
+    opacity: .5;
+}
+.slick-dots li.slick-active button , .slick-dots li.slick-active a { background: #2980b9; opacity: 1; }
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+
+@media (max-width: 980px) {
+    .slick-prev,
+    .slick-next
+    {
+        width: 40px;
+        height: 40px;
+        background-size: auto 100%;
+    }
+    .slick-prev
+    {
+        left: 10px; 
+    }
+    .slick-next
+    {
+        right: 10px; 
+    }
+}

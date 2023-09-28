@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="143px" height="181px" viewBox="0 0 143 181" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Clipped</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M136.05,35.577 L77.27,1.657 C73.4567502,-0.551749174 68.7532498,-0.551749174 64.94,1.657 L6.15,35.577 C2.34320138,37.7914864 1.0658141e-14,41.862949 1.0658141e-14,46.267 L1.0658141e-14,114.157 C0.00335849977,118.55253 2.34644983,122.613888 6.15,124.817 L35.56,141.817 L35.56,176.477 C35.5650913,177.796328 36.2723184,179.013129 37.4161723,179.670587 C38.5600262,180.328046 39.9674253,180.326679 41.11,179.667 L136.11,124.847 C139.918075,122.648408 142.262819,118.584184 142.260003,114.187 L142.260003,46.257 C142.237026,41.8458396 139.872315,37.7789929 136.05,35.577 L136.05,35.577 Z" id="path-1"></path>
+    </defs>
+    <g id="Social" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Dialogflow_logo">
+            <g id="Clipped">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <g id="Path"></g>
+                <g id="Group" mask="url(#mask-2)">
+                    <g transform="translate(0.000000, -2.000000)">
+                        <polygon id="Path" fill="#EF6C00" fill-rule="nonzero" points="142.2 41.157 71.12 82.207 -1.42108547e-14 41.157 -1.42108547e-14 123.257 35.56 143.767 35.56 184.827 142.2 123.257"></polygon>
+                        <g id="Group" stroke-width="1" fill="none" fill-rule="evenodd">
+                            <polygon id="Path" fill="#FF9800" fill-rule="nonzero" points="71.12 82.207 0 41.157 71.12 0.107 142.2 41.157"></polygon>
+                            <polygon id="Path" fill="#FF9800" fill-rule="nonzero" points="69.86 80.957 0.45 40.887 2.66453526e-15 41.157 71.12 82.207 142.2 41.157 140.53 40.167"></polygon>
+                            <polygon id="Path" fill="#FF9800" fill-rule="nonzero" points="71.12 82.717 71.12 82.207 0.45 41.397 2.66453526e-15 41.667"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

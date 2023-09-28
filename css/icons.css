@@ -1,0 +1,66 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../plugins/fonts/icomoon.eot?vzqyq0');
+  src:  url('../plugins/fonts/icomoon.eot?vzqyq0#iefix') format('embedded-opentype'),
+    url('../plugins/fonts/icomoon.ttf?vzqyq0') format('truetype'),
+    url('../plugins/fonts/icomoon.woff?vzqyq0') format('woff'),
+    url('../plugins/fonts/icomoon.svg?vzqyq0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calender-icon:before {
+  content: "\e900";
+}
+.icon-call-icon:before {
+  content: "\e901";
+}
+.icon-comment-icon:before {
+  content: "\e903";
+}
+.icon-Mobile-Menu:before {
+  content: "\e902";
+}
+.icon-Angle-Right:before {
+  content: "\e907";
+}
+.icon-play:before {
+  content: "\e912";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-twitter:before {
+  content: "\ea96";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-search:before {
+  content: "\e986";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location2:before {
+  content: "\e948";
+}
+.icon-mail2:before {
+  content: "\ea84";
+}
