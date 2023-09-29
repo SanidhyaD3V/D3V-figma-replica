@@ -661,6 +661,9 @@
   .visible-on-laptop {
     display: block; /* Display the div when the screen width is 1024px or more (typical for laptops) */
   }
+  .laptop-top-pad{
+    padding-top: 7%;
+  }
 }
 
 
@@ -698,6 +701,14 @@
     width: 182px;
     
  } 
+
+ .phone-top-pad{
+  padding-top: 60px;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+ }
 
  /* .d3v-logo-style img{
   height: 50px;
