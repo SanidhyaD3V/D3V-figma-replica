@@ -124,6 +124,7 @@
 
 .what-we-do-2-need{
     color:  rgba(0,125,255,1) ;
+    font-size: 28px;
 }
 
 .what-we-do-2-send{
@@ -137,7 +138,7 @@
     width: auto;
     /* background: black; */
     margin-left: 10%;
-    padding: 8px 12px 0 12px;
+    padding: 10px 12px 0 12px;
     border-radius: 24px;
     border: 2px solid  rgba(0,125,255,1) ; 
     color:  rgba(0,125,255,1) ;
@@ -242,13 +243,15 @@
     display: flex;
     flex-direction: column;
     /* margin-bottom: 12px; */
-    padding: 5%;
+    padding: 5% 5% 5% 5% ;
 
   }
 
   .caresol-inner-two{
     height: 170px;
-    width: 330px;
+    /* width: 330px; */
+    width: 100%;
+    /* margin: auto; */
     background: #fff;
     box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);
     border-radius: 24px;
@@ -573,7 +576,7 @@
  .div-out{
     display: flex;
     flex-direction: column;
-    padding-left: 120px;
+    padding-left: 60px;
     padding-right: 60px;
  }
 
@@ -702,6 +705,12 @@
     
  } 
 
+ .caresol-outer{
+ 
+  padding: 5% 13% 5% 5% ;
+
+}
+
  .phone-top-pad{
   padding-top: 60px;
   display: flex;
@@ -743,4 +752,20 @@
   border: 1px solid #b32222;
   height: 200px;
   width: 200px;
+}
+.caresol-inner-one h3{
+  font-weight: 600;
+}
+
+.caresol-inner-two h3{
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.caresol-inner-two h4{
+  font-weight: 600;
+}
+
+.caresol-inner-three span{
+  font-weight: 600;
 }
