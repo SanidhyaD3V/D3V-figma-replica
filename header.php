@@ -62,7 +62,7 @@
                 <div class="myparentbox " class="col-lg-12">
                     <div class="myfirstbox">
                         <div class="d3v-logo-style"> <a href="<?php bloginfo('url') ?>" title="D3V Technology Solutions"><img  src="<?php bloginfo('template_url') ?>/images/d3v-logo.svg" class="img-responsive" alt="D3V Technology Solutions"></a> </div>
-                        <div class="mymenubox">
+                        <div  class="mymenubox">
                             <ul>
                                 <li>Home</li>
                                 <li>Services</li>
@@ -73,12 +73,12 @@
                         </div>
                     </div>
 
-                    <div class="myseceondbox" >
+                    <div  class="myseceondbox" >
                         <ul>
                             <li><div style="background:#000;color:fff;border-radius:16px; height: 40px; width:120px;border-radius:30px;">
                             <h6 style="font-size:14px;padding-left:18px;padding-top:4px;color:#fff;">Contact Us</h6>
                             </div></li>
-                            <li>
+                            <li >
                                 <div style="border-radius:50%;height: 40px;width:40px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);display:flex;justify-content:center;align-items:center;">
                                 <span class="material-symbols-outlined">
                                 menu
