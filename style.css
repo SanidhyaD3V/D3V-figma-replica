@@ -41,7 +41,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 87%;
+    width: 89%;
     height: 85px;
     border-radius: 12px;
     position: fixed;
@@ -238,6 +238,22 @@
     height:370px;
     width:370px;
   
+  }
+
+  @media (max-width: 1024px) {
+    #designs .item {
+      height:340px;
+      width:340px;
+    }
+
+    .caresol-inner-two{
+      height: 130px;
+      /* width: 330px; */
+      width: 100%;
+
+      margin-bottom: 20px;
+    }
+
   }
 
   .caresol-outer{
@@ -570,7 +586,7 @@
     color: #000;
     font-size: 18px;
     font-weight: 400;
-    color: #2F5233;
+    /* color: #2F5233; */
     
  }
 
@@ -681,6 +697,9 @@
   .visible-on-mobile {
     display: none; /* Hide the div when the screen width is 1024px or more (typical for laptops) */
   }
+  .brand-section{
+    padding-top: 40px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -700,20 +719,28 @@
     padding-top: 0;
   }
 
+  .brand-section{
+    padding-top: 20px;
+  }
+
+  .brand-section h2{
+    font-size: 34px;
+  }
+
   .small-boxes{
     height: 190px;
     width: 182px;
     
  } 
 
- .caresol-outer{
+ /* .caresol-outer{
  
   padding: 5% 13% 5% 5% ;
 
-}
+} */
 
  .phone-top-pad{
-  padding-top: 60px;
+  padding-top: 80px;
   display: flex;
   /* flex-direction: column;
   justify-content: center;
