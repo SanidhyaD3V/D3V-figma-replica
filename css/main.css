@@ -489,6 +489,10 @@ header .container-fluid {
         width: 20px !important;
     }
     
+    #myni{
+       position: relative;
+       top: -5px;
+    }
 }
 
 @media (min-width: 1200px) {
@@ -524,7 +528,7 @@ header .d3v__logo a {
 }
 
 header .d3v__logo a img {
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 @media (max-width: 991px) {

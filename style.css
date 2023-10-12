@@ -462,7 +462,7 @@
   .two-box-parent{
     display: flex;
     flex-direction: row;
-    height: 300px;
+    height: 320px;
     /* background: green; */
   }
   .inside-div-one{
