@@ -19,7 +19,8 @@
         <meta name="google-site-verification" content="p_SDqUM6no9eo87eeWyNqcLTlbfuIbI_DdoeKKG9Mbs">
         <meta name="msvalidate.01" content="0152B83A4CCF27CB54F3644D27654300">
         <meta name="yandex-verification" content="29867268234c8c9c"> 
-        <script src="./js/main.js"></script>
+        <!-- <script src="./js/main.js"></script> -->
+        <!-- <script src="./js/function.js"></script> -->
         <!-- Include Owl Carousel JavaScript -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -53,100 +54,164 @@
           }
         });
       });
+
+      /* Menu icon click for mobile*/
+/* ------------------------------*/
+$(document).on('click', '.menu-icon', function(){
+    console.log("priniting222222222");
+$(this).toggleClass('active');
+if(!$('body').hasClass('menu-in')){
+  $('body').addClass('menu-in');
+}
+else{
+  $('body').removeClass('menu-in');
+}
+});
+
+/* submenu arrows */
+// $('.menu > li > a').click(function(e){
+$(document).on('click', '.menu > li > a', function(){    
+    console.log("priniting33333333");
+$(this).parent().addClass('MenuOpen');
+});
+// $('.menu > li > .submenu ul li a').click(function(e){
+$(document).on('click', '.menu > li > .submenu ul li a', function(){     
+    console.log("priniting444444444");
+$(this).parent().addClass('MenuOpen');
+});
+// $('.back__menu').click(function(e){
+$(document).on('click', '.back__menu', function(){       
+    console.log("priniting55555555555");
+$(this).parent().parent().removeClass('MenuOpen');
+});
+$('.btn-primary').hover(function(e){
+$(this).children('.fa-angle-right').toggleClass('icon-Long-Arrow-Right');
+});
         </script>
 
-<script>
-    function openNav() {
-      document.getElementById("mySidenav").style.width = "222px";
-    }
-    
-    function closeNav() {
-      document.getElementById("mySidenav").style.width = "0";
-    }
-    </script>
+
     
     </head>
 <body>
+
     <header class="main-header">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="visible-on-laptop" >
-                <div class="myparentbox " class="col-lg-12">
-                    <div class="myfirstbox">
-                        <div class="d3v-logo-style"> <a href="#" title="D3V Technology Solutions"><img  src="./images/d3v-logo.svg" class="img-responsive" alt="D3V Technology Solutions"></a> </div>
-                        <div class="mymenubox">
-                            <ul>
-                                <li>Home</li>
-                                <li>Services</li>
-                                <li>Resources</li>
-                                <li>Faq's</li>
-                                
-                            </ul>
+        <div  class="container-fluid">
+           <div style=" padding: 0 3%; position: relative;top: -7px;" class="row">
+              <div style="background:#fff; border-radius: 12px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);height: 85px;" class="col-lg-12 d-flex align-items-center ">
+                 <div  class="d3v__logo">                     
+                    <a href="index.html"><img style="height: 50px;width:50px;position: relative;top: -4px;" src="./images/d3v-logo.svg" class="img-responsive" alt="d3v"></a>
+                 </div>
+                    <div   class="d-flex menu-links align-items-center justify-content-between ">
+                       <ul class="menu d-flex">
+                          <li class="active"><a href="index.html">Home</a>
+                          </li>
+                          <li><a href="javascript:void(0)">Services</a>  
+                             <i class="icon-Angle-Right"></i>  
+                             <div class="submenu">
+                                <a class="back__menu" href="javascript:void(0)"><i class="icon-Angle-Right"></i>  Back to Main Menu</a>
+                                <h5>Services</h5>
+                                <ul>
+                                   <li>
+                                      <a href="javascript:void(0)">CloudOps</a>
+                                      <i class="icon-Angle-Right"></i>  
+                                      <div class="submenu2">
+                                         <a class="back__menu" href="javascript:void(0)"><i class="icon-Angle-Right"></i>  Back to Sub Menu</a>
+                                         <h5>CloudOps</h5>
+                                         <ul>
+                                            <li><a href="migration-management.html">Migration & Management</a></li>
+                                            <li><a href="devops.html">DevOps</a></li>
+                                         </ul>
+                                      </div>  
+                                   </li>
+                                   <li><a href="javascript:void(0)">Big Data</a>
+                                      <i class="icon-Angle-Right"></i>  
+                                      <div class="submenu2">
+                                         <a class="back__menu" href="javascript:void(0)"><i class="icon-Angle-Right"></i>  Back to Sub Menu</a>
+                                         <h5>Big Data</h5>
+                                         <ul>
+                                            <li><a href="big-data-analytics.html">Big Data Analytics</a></li>
+                                            <li><a href="dialogflow.html">Dialogflow</a></li>
+                                         </ul>
+                                      </div> 
+                                   </li>
+                                   <li><a href="#">App Dev</a>
+                                      <i class="icon-Angle-Right"></i>  
+                                      <div class="submenu2">
+                                         <a class="back__menu" href="javascript:void(0)"><i class="icon-Angle-Right"></i>  Back to Sub Menu</a>
+                                         <h5>App Dev</h5>
+                                         <ul>
+                                            <li><a href="cloud-based-application-development.html">Cloud-Based Dev</a></li>
+                                            <li><a href="app-modernization.html">App Modernization</a></li>
+                                         </ul>
+                                      </div> 
+                                   </li>
+                                </ul>
+                             </div>                      
+                          </li>
+                          <li><a href="javascript:void(0)">Resources</a>  
+                             <i class="icon-Angle-Right"></i>  
+                             <div class="submenu">
+                                <a class="back__menu" href="javascript:void(0)"><i class="icon-Angle-Right"></i>  Back to Main Menu</a>
+                                <h5>Resources</h5>
+                                <ul>
+                                   <li>
+                                      <a href="resources.html" title="title">Insight Articles</a>
+                                   </li>
+                                   <li><a href="#" title="title">Case Studies</a>
+                                   </li>
+                                   <li><a href="#" title="title">Cloud News</a>
+                                   </li>
+                                   <li><a href="ebooks.html" title="title">eBooks</a>
+                                   </li>
+                                   <li><a href="whitepapers.html" title="title">Whitepapers</a>
+                                   </li>
+                                   <li><a href="workshop.html" title="title">Workshops</a>
+                                   </li>
+                                </ul>
+                             </div>                          
+                          </li>
+                          <li><a href="google-cloud.html" title="title">Google Cloud</a>
+                          </li>
+                          <li><a href="javascript:void(0)" title="title">About</a>   
+                             <i class="icon-Angle-Right"></i>  
+                             <div class="submenu">
+                                <a class="back__menu" href="javascript:void(0)"><i class="icon-Angle-Right"></i>  Back to Main Menu</a>
+                                <h5>About</h5>
+                                <ul>
+                                   <li>
+                                      <a href="about.html" title="title">About us</a>
+                                   </li>
+                                   <li><a href="how-to-work.html" title="title">How We Work</a>
+                                   </li>
+                                   <li><a href="leadership.html" title="title">Leadership</a>
+                                   </li>
+                                   <li><a href="careers.html" title="title">Careers</a>
+                                   </li>
+                                   <li><a href="contact.html" title="title">Contact</a>
+                                   </li>
+                                </ul>
+                             </div>                         
+                          </li>
+                       </ul>
+                        <ul  class="top-right-btns d-flex justify-content-between align-items-center">
+                          <li ><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScEcaivbXs9d_pPx5YWRP5aO_QajOAUYwnNJYT1WTMyUrVSZg/viewform" class="btn btn-primary">Get Estimate</a>
+                          </li>
+                          <li><a target="_blank" href="https://calendly.com/steve-d3v" class="btn btn-secondary">Schedule Call</a></li>
+                      </ul>
+                 </div>
+                 <a href="javascript:void(0)" class="menu-icon">
+                    <div  style="border-radius:50%;height: 40px;width:40px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);display:flex;justify-content:center;align-items:center;">
+                        <span class="material-symbols-outlined">
+                        menu
+                        </span>
                         </div>
-                    </div>
-
-                    <div class="myseceondbox" >
-                        <ul>
-                            <li><div style="background:#000;color:fff;border-radius:16px; height: 40px; width:120px;border-radius:30px;">
-                            <h6 style="font-size:14px;padding-left:18px;padding-top:4px;color:#fff;">Contact Us</h6>
-                            </div></li>
-                            <li >
-                                <div style="border-radius:50%;height: 40px;width:40px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);display:flex;justify-content:center;align-items:center;">
-                                <span class="material-symbols-outlined">
-                                menu
-                                </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> 
-
-                </div>
-                </div>
-
-                <div style="position: fixed;" class="visible-on-mobile" >
-                <div style="width:91%;" class="myparentbox " class="col-lg-12">
-                    <div class="myfirstbox">
-                        <div class="d3v-logo-style"> <a href="#" title="D3V Technology Solutions"><img  src="./images/d3v-logo.svg" class="img-responsive" alt="D3V Technology Solutions"></a> </div>
-                        <!-- <div class="mymenubox">
-                            <ul>
-                                <li>Home</li>
-                                <li>Services</li>
-                                <li>Resources</li>
-                                <li>Faq's</li>
-                                
-                            </ul>
-                        </div> -->
-                    </div>
-
-                    <div class="myseceondbox" >
-                        <ul>
-                            <li><div style="background:#000;color:fff;border-radius:16px; height: 40px; width:120px;border-radius:30px;">
-                            <h6 style="font-size:14px;padding-left:18px;padding-top:8px;color:#fff;">Contact Us</h6>
-                            </div></li>
-                            <li style="cursor:pointer" onclick="openNav()">
-                                <div style="border-radius:50%;height: 40px;width:40px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);display:flex;justify-content:center;align-items:center;">
-                                <span class="material-symbols-outlined">
-                                menu
-                                </span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> 
-
-                </div>
-                </div>
-                
-            </div>
+                 </a>
+                                            
+              </div>
+           </div>
         </div>
-
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Resources</a>
-            <a href="#">Services</a>
-            <a href="#">Faq's</a>
-          </div>
-    </header> 
+     </header>
+    
 
     <div class="section">
         
@@ -418,8 +483,7 @@
             <br><br><br>
             <div class="maindiv padding-left-phone">
                 <div class="main-div-two" >
-                    <h2 style="padding-bottom: 60px;" class="visible-on-laptop">Guiding Your <br> Technological Journey </h2>
-                    <h2 style="position: relative;top: -34px;" class="visible-on-mobile">Guiding Your <br> Technological<br> Journey </h2>
+                    <h2>Guiding Your <br> Technological Journey </h2>
                     
                 </div>
                 <div style="border-bottom: 2px solid #fff;width:70%;" class="main-div-three" >
@@ -434,7 +498,7 @@
                 <div style="border-bottom: 2px solid #fff;width:70%;" class="main-div-three" >
                 <h4>Agile Project Management</h4> 
                 </div>
-            </div><br><br>
+            </div><br><br><br>
         </div>
 
         <div style="padding:0;margin:0;" class="col-lg-4">
@@ -543,7 +607,7 @@
                 <div style="padding:0;margin:0;" class="col-lg-6">
                 
                 <div class="milestone-div padding-left-phone">
-                    <h3>BENEFITS</h3>
+                    <h3>BENIFITS</h3>
                     <h2 class="visible-on-laptop " >Why partner with us ?</h2>
                     <h2 class="visible-on-mobile " >Why partner with <br> us ?</h2>
                     <h4>Elevate with confidence: Benefiting from 8+ years s of <br>expertise, backed by a 100% success rate, and powered<br> by innovations that drive your next big breakthrough</h4><br>

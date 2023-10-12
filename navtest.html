@@ -1,0 +1,91 @@
+<header class="main-header">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="visible-on-laptop" >
+            <div class="myparentbox " class="col-lg-12">
+                <div class="myfirstbox">
+                    <div class="d3v-logo-style"> <a href="#" title="D3V Technology Solutions"><img  src="./images/d3v-logo.svg" class="img-responsive" alt="D3V Technology Solutions"></a> </div>
+                    <div class="mymenubox">
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Resources</li>
+                            <li>Faq's</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="myseceondbox" >
+                    <ul>
+                        <li><div style="background:#000;color:fff;border-radius:16px; height: 40px; width:120px;border-radius:30px;">
+                        <h6 style="font-size:14px;padding-left:18px;padding-top:4px;color:#fff;">Contact Us</h6>
+                        </div></li>
+                        <li >
+                            <div style="border-radius:50%;height: 40px;width:40px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);display:flex;justify-content:center;align-items:center;">
+                            <span class="material-symbols-outlined">
+                            menu
+                            </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+
+            </div>
+            </div>
+
+            <div style="position: fixed;" class="visible-on-mobile" >
+            <div style="width:91%;" class="myparentbox " class="col-lg-12">
+                <div class="myfirstbox">
+                    <div class="d3v-logo-style"> <a href="#" title="D3V Technology Solutions"><img  src="./images/d3v-logo.svg" class="img-responsive" alt="D3V Technology Solutions"></a> </div>
+                    <!-- <div class="mymenubox">
+                        <ul>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>Resources</li>
+                            <li>Faq's</li>
+                            
+                        </ul>
+                    </div> -->
+                </div>
+
+                <div class="myseceondbox" >
+                    <ul>
+                        <li><div style="background:#000;color:fff;border-radius:16px; height: 40px; width:120px;border-radius:30px;">
+                        <h6 style="font-size:14px;padding-left:18px;padding-top:8px;color:#fff;">Contact Us</h6>
+                        </div></li>
+                        <li style="cursor:pointer" onclick="openNav()">
+                            <div style="border-radius:50%;height: 40px;width:40px;box-shadow: 0 1px 30px 1px rgba(0,0,0,0.2);display:flex;justify-content:center;align-items:center;">
+                            <span class="material-symbols-outlined">
+                            menu
+                            </span>
+                            </div>
+                        </li>
+                    </ul>
+                </div> 
+
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">Home</a>
+        <a href="#">Resources</a>
+        <a href="#">Services</a>
+        <a href="#">Faq's</a>
+      </div>
+</header> 
+
+
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "222px";
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
