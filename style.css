@@ -476,6 +476,7 @@
     /* border-right: 1px solid grey; */
     /* border-bottom: 1px solid grey; */
     
+    
   }
 
   .inside-div-one h2{
@@ -710,6 +711,13 @@
   .border-none-phone{
     border: none;
   }
+  #heightad{
+    height: 270px;
+  }
+  .heieight{
+    position: relative;
+    top: -10px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -717,6 +725,16 @@
     padding-top: 0;
   }
 
+  .two-box-parent{
+    height: auto;
+  }
+
+  .two-box-margin{
+    margin-bottom: 30px;
+  }
+  .out-div-margin{
+    margin: 20px 0 20px 0;
+  }
   .brand-section{
     padding-top: 20px;
   }
